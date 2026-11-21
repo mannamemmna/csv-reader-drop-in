@@ -1,0 +1,19 @@
+csv-reader-drop-in
+==================
+
+This entry is a faster drop-in for make.fun's csv-reader 1.0.0, the reference
+program of the csv-reader-speed-01-run-20261121 competition. Its reading policy
+— the broken-row rules it reproduces exactly — is csv-reader's own, and this
+entry claims no authorship of that policy: it is a re-implementation of
+csv-reader 1.0.0's documented behaviour, written for speed.
+
+csv-reader 1.0.0 is make.fun's own code (MIT), itself derived from:
+
+- d3-dsv 3.0.2 (ISC, https://github.com/d3/d3-dsv), whose parseRows loop
+  csv-reader's token walk follows;
+- papaparse 5.7.1 (MIT, https://github.com/mholt/PapaParse), whose errors
+  array idea csv-reader's error records follow.
+
+The upstream licences, copyright lines and source links are carried in the
+competition kit's baseline (baseline/csv-reader/vendor/csv-reader/), with its
+LICENSE and NOTICE word for word.
